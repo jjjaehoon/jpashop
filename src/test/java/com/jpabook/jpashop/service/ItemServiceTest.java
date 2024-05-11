@@ -54,7 +54,6 @@ class ItemServiceTest {
 	}
 	
 	@Test
-	@Rollback(false)
 	public void 재고_감소 () throws Exception {
 	    //given
 		Album album = new Album();
