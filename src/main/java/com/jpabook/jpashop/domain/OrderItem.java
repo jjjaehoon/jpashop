@@ -17,8 +17,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
+@Getter @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)	//엔티티에 생성메서드를 만들었기 때문에 다른 방식으로 생성 못하게 막는 옵션
 public class OrderItem {
 

@@ -36,7 +36,7 @@ public class MemberService {
 	}
 
 	/**
-	 * ctrl + alt + v (변수 추출 단축키)
+	 * Ctrl Alt v 변수 추출 단축키
 	 * 같은 이름의 member가 동시에 들어오면 둘 다 통과될 수 있기 때문에
 	 * member의 name을 유니크 제약 조건으로 하는게 좋다
 	 */

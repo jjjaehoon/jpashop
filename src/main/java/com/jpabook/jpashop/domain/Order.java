@@ -104,6 +104,7 @@ public class Order {
 	//==조회 로직==//
 	/**
 	 * 전체 주문 가격 조회
+	 * 주석 처리 코드를 람다식으로 변경한 메서드
 	 */
 	public int getTotalPrice() {
 		// int totalPrice = 0;

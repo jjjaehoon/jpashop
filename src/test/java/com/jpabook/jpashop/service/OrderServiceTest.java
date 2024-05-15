@@ -53,7 +53,7 @@ class OrderServiceTest {
 	public void 상품주문_재고수량초과 () throws Exception {
 	    //given
 		/**
-		 * Crtl Alt M 메서드 추출 단축키
+		 * Ctrl Alt M 메서드 추출 단축키
 		 */
 		Member member = createMember();
 		Item item = createBook("시골 JPA", 10000, 10);
