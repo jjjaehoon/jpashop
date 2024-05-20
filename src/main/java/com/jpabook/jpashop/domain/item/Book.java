@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@DiscriminatorValue("B")
+@DiscriminatorValue("B") //싱글 테이블 전략에서 각 아이템을 구분하기 위한 값
 @Getter @Setter
 public class Book extends Item {
 
