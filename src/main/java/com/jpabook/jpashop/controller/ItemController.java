@@ -79,17 +79,8 @@ public class ItemController {
 	 * uri로 id를 다른 유저가 수정할 수 있기 때문에 아이템에 대한 유저 권한을 체크하는 로직이 있으면 좋음
 	 */
 	@PostMapping("items/{itemId}/edit")
-	public String updateItem(@ModelAttribute("form") BookForm form) {
-
-		Book book = new Book();
-		book.setId(form.getId());
-		book.setName(form.getName());
-		book.setPrice(form.getPrice());
-		book.setStockQuantity(form.getStockQuantity());
-		book.setAuthor(form.getAuthor());
-		book.setIsbn(form.getIsbn());
-
-		itemService.saveItem(book);
+	public String updateItem(@PathVariable Long itemId, @ModelAttribute("form") BookForm form) {
+		itemService.updateItem(itemId, form.getName(), form.getPrice(), form.getStockQuantity());
 		return "redirect:/items";
 	}
 }
