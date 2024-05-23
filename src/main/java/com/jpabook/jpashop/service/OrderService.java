@@ -2,7 +2,6 @@ package com.jpabook.jpashop.service;
 
 import java.util.List;
 
-import org.aspectj.weaver.ast.Or;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -29,6 +28,8 @@ public class OrderService {
 
 	/**
 	 * 주문
+	 * 인자로 Entity를 넘기면 그 Entity는 JPA랑은 관계가 없는 것이다.
+	 * 그래서 식별자를 넘겨서 JPA의 영속성 Entity를 가져와서 사용할것
 	 */
 	@Transactional
 	public Long order(Long memberId, Long itemId, int count) {
