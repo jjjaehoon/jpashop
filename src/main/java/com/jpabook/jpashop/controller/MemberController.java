@@ -55,6 +55,9 @@ public class MemberController {
 		return "redirect:/"; //첫 번째 페이지로 리다이렉트
 	}
 
+	/**
+	 * 회원 목록 조회 화면 이동 및 API
+	 */
 	@GetMapping("/members")
 	public String list(Model model) {
 		List<Member> members = memberService.findMembers();

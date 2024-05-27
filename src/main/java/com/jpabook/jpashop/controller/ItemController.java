@@ -56,7 +56,7 @@ public class ItemController {
 	}
 
 	/**
-	 * 상품 수정 화면
+	 * 상품 수정 폼
 	 */
 	@GetMapping("items/{itemId}/edit")
 	public String updateItemForm(@PathVariable("itemId") Long itemId, Model model) {
